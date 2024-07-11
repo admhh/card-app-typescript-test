@@ -35,7 +35,9 @@ export default function AllEntries() {
             }
           >
             <h1 className={colourTheme["list-item-text"] + " font-bold text-sm md:text-lg"}>{entry.title}</h1>
-            <p className={colourTheme["list-item-text"] + " text-center text-lg font-light md:mt-2 md:mb-4 mt-1 mb-3"}>{entry.description}</p>
+            <p className={colourTheme["list-item-text"] + " text-center text-lg font-light md:mt-2 md:mb-4 mt-1 mb-3"}>
+              {entry.description}
+            </p>
             <section className="flex items-center justify-between flex-col md:flex-row pt-2 md:pt-0">
               <div className="flex justify-center">
                 <button
