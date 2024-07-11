@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from './components/NavBar'
+import ModeToggle from "./components/ModeToggle"
 import AllEntries from './routes/AllEntries'
 import NewEntry from './routes/NewEntry'
 import EditEntry from './routes/EditEntry'
@@ -13,20 +14,22 @@ import {
 export default function App() {
   return (
     <section>
-  <Router>
-    <EntryProvider>
-    <NavBar></NavBar>
-      <Routes>
-        <Route path="/" element={<AllEntries/>}>
-        </Route>
-        <Route path="create" element={<NewEntry/>}>
-        </Route>
-        <Route path="edit/:id" element={<EditEntry/>}>
-        </Route>
-      </Routes>
-    </EntryProvider>
-    </Router>
+      <Router>
+        <EntryProvider>
+        <NavBar></NavBar>
+          <Routes>
+            <Route path="/" element={<AllEntries/>}>
+            </Route>
+            <Route path="create" element={<NewEntry/>}>
+            </Route>
+            <Route path="edit/:id" element={<EditEntry/>}>
+            </Route>
+          </Routes>
+        </EntryProvider>
+      </Router>
+      <ModeToggle></ModeToggle>
     </section>
     
+
   );
 }
