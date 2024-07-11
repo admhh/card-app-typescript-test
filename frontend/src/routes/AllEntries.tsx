@@ -40,10 +40,10 @@ export default function AllEntries() {
             <p className={colourTheme["list-item-text"] + " text-center text-lg font-light md:mt-2 md:mb-4 mt-1 mb-3"}>
               {entry.description}
             </p>
-            
+
             <time className={colourTheme["list-item-text"] + " text-right text-sm md:text-lg"}>
-                Scheduled for: {new Date(entry.scheduled.toString()).toLocaleDateString()}
-              </time>
+              Scheduled for: {new Date(entry.scheduled.toString()).toLocaleDateString()}
+            </time>
             <section className="flex items-center justify-between flex-col md:flex-row pt-2 md:pt-0">
               <div className="flex justify-center">
                 <button

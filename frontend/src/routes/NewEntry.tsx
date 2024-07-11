@@ -41,9 +41,7 @@ export default function NewEntry() {
         value={newEntry.description}
         onChange={handleInputChange}
       />
-      <p className={colourTheme['generic-text']}>
-        Created at:
-      </p>
+      <p className={colourTheme["generic-text"]}>Created at:</p>
       <input
         className="p-3 rounded-md"
         type="date"
@@ -51,9 +49,7 @@ export default function NewEntry() {
         value={new Date(newEntry.created_at).toISOString().split("T")[0]}
         onChange={handleInputChange}
       />
-      <p className={colourTheme['generic-text']}>
-        Scheduled:
-      </p>
+      <p className={colourTheme["generic-text"]}>Scheduled:</p>
       <input
         className="p-3 rounded-md"
         type="date"
