@@ -37,7 +37,7 @@ export const EntryProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     await axios.delete<Entry>(`http://localhost:3001/delete/${id}`);
     setEntries((e) => e.filter((entry) => entry.id != id));
   };
-  
+
   return (
     <EntryContext.Provider value={{ entries, saveEntry, updateEntry, deleteEntry }}>{children}</EntryContext.Provider>
   );
