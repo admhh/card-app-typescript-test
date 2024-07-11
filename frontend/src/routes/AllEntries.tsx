@@ -11,8 +11,8 @@ export default function AllEntries() {
   if (entries.length == 0) {
     return (
       <section>
-        <h1 className="text-center font-semibold text-2xl m-5">You don't have any cards.</h1>
-        <p className="text-center font-medium text-md">
+        <h1 className={colourTheme['generic-text'] + " text-center font-semibold text-2xl m-5"}>You don't have any cards.</h1>
+        <p className={colourTheme['generic-text'] + " text-center font-medium text-md"}>
           Let's{" "}
           <Link className="text-blue-400 underline underline-offset-1" to="/create">
             Create One

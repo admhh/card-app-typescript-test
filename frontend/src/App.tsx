@@ -9,7 +9,7 @@ import { EntryProvider } from "./utilities/globalContext";
 
 export default function App() {
   return (
-    <section>
+    <section className="bg-white h-screen">
       <Router>
         <EntryProvider>
           <NavBar></NavBar>

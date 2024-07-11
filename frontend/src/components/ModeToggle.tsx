@@ -5,6 +5,7 @@ export default function ModeToggle() {
   return (
     <button
       type="button"
+      className={colourTheme['generic-text'] + " absolute bottom-10 right-10"}
       onClick={() => {
         console.log("clicked");
 
@@ -12,12 +13,17 @@ export default function ModeToggle() {
 
         // update document-level tracker
         if (colourTheme.theme == "light") {
+          newColourTheme["main-background"] = "bg-slate-900";
           newColourTheme["list-item-background"] = "bg-slate-700";
           newColourTheme["list-item-text"] = "text-slate-100";
+          newColourTheme["generic-text"] = "text-slate-200";
           newColourTheme.theme = "dark";
+
         } else {
+          newColourTheme["main-background"] = "bg-white";
           newColourTheme["list-item-background"] = "bg-gray-300";
           newColourTheme["list-item-text"] = "text-gray-950";
+          newColourTheme["generic-text"] = "text-black";
           newColourTheme.theme = "light";
         }
 
