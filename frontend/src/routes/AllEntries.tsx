@@ -11,8 +11,10 @@ export default function AllEntries() {
   if (entries.length == 0) {
     return (
       <section>
-        <h1 className={colourTheme['generic-text'] + " text-center font-semibold text-2xl m-5"}>You don't have any cards.</h1>
-        <p className={colourTheme['generic-text'] + " text-center font-medium text-md"}>
+        <h1 className={colourTheme["generic-text"] + " text-center font-semibold text-2xl m-5"}>
+          You don't have any cards.
+        </h1>
+        <p className={colourTheme["generic-text"] + " text-center font-medium text-md"}>
           Let's{" "}
           <Link className="text-blue-400 underline underline-offset-1" to="/create">
             Create One
@@ -38,6 +40,10 @@ export default function AllEntries() {
             <p className={colourTheme["list-item-text"] + " text-center text-lg font-light md:mt-2 md:mb-4 mt-1 mb-3"}>
               {entry.description}
             </p>
+            
+            <time className={colourTheme["list-item-text"] + " text-right text-sm md:text-lg"}>
+                Scheduled for: {new Date(entry.scheduled.toString()).toLocaleDateString()}
+              </time>
             <section className="flex items-center justify-between flex-col md:flex-row pt-2 md:pt-0">
               <div className="flex justify-center">
                 <button

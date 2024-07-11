@@ -5,6 +5,7 @@ const colourTheme = {
   "main-background": "bg-white",
   "list-item-background": "bg-gray-300",
   "list-item-text": "text-gray-950",
-  "generic-text": "text-black"
+  "shadow": "shadow-gray-500",
+  "generic-text": "text-black",
 };
 export default colourTheme;

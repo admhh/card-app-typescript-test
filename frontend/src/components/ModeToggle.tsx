@@ -5,7 +5,7 @@ export default function ModeToggle() {
   return (
     <button
       type="button"
-      className={colourTheme['generic-text'] + " absolute bottom-10 right-10"}
+      className={colourTheme["generic-text"] + " absolute bottom-10 right-10"}
       onClick={() => {
         console.log("clicked");
 
@@ -17,13 +17,14 @@ export default function ModeToggle() {
           newColourTheme["list-item-background"] = "bg-slate-700";
           newColourTheme["list-item-text"] = "text-slate-100";
           newColourTheme["generic-text"] = "text-slate-200";
+          newColourTheme["shadow"] = "shadow-black";
           newColourTheme.theme = "dark";
-
         } else {
           newColourTheme["main-background"] = "bg-white";
           newColourTheme["list-item-background"] = "bg-gray-300";
           newColourTheme["list-item-text"] = "text-gray-950";
           newColourTheme["generic-text"] = "text-black";
+          newColourTheme["shadow"] = "shadow-gray-500";
           newColourTheme.theme = "light";
         }
 
