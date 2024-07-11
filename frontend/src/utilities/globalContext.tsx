@@ -32,6 +32,7 @@ export const EntryProvider: React.FC<{children : ReactNode}> = ({children}) => {
           return entries
         })
     }
+    
     const deleteEntry = async (id: string) => {
         await axios.delete<Entry>(`http://localhost:3001/delete/${id}`)
         setEntries(e => e.filter(entry => entry.id != id))
